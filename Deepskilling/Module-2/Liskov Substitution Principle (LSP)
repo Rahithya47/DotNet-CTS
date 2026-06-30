@@ -1,1 +1,22 @@
+class Person:
 
+    def display(self):
+        print("Person Information")
+
+class Student(Person):
+
+    def display(self):
+        print("Student: Rahithya Kunisetty")
+
+class Faculty(Person):
+
+    def display(self):
+        print("Faculty: Dr. Kumar")
+
+people = [
+    Student(),
+    Faculty()
+]
+
+for person in people:
+    person.display()
