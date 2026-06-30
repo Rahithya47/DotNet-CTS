@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>jQuery Basics</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+
+}
+
+.container{
+
+width:400px;
+margin:60px auto;
+padding:20px;
+background:white;
+text-align:center;
+border-radius:8px;
+box-shadow:0 0 10px lightgray;
+
+}
+
+button{
+
+padding:10px 20px;
+margin:10px;
+background:#198754;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 id="title">
+Community Event Portal
+</h2>
+
+<p id="message">
+Welcome! Register now to participate in exciting events.
+</p>
+
+<button id="changeText">
+Change Text
+</button>
+
+<button id="toggleMessage">
+Show / Hide Message
+</button>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+$("#changeText").click(function(){
+
+$("#title").text("Registration Open");
+
+});
+
+$("#toggleMessage").click(function(){
+
+$("#message").fadeToggle();
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
