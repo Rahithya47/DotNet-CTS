@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Training Portal</title>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Employee Training Portal</h1>
+
+<nav>
+
+<a href="#">Home</a> |
+<a href="#">Courses</a> |
+<a href="#">About</a> |
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<hr>
+
+<main>
+
+<section>
+
+<h2>Featured Course</h2>
+
+<article>
+
+<h3>Frontend Development</h3>
+
+<p>
+Learn HTML, CSS, JavaScript and Bootstrap through practical examples.
+</p>
+
+</article>
+
+</section>
+
+<section>
+
+<h2>Course Preview</h2>
+
+<video width="350" controls>
+
+<source src="course.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© 2026 Employee Training Portal</p>
+
+</footer>
+
+</body>
+
+</html>
