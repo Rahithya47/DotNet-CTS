@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<title>jQuery Effects</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+
+font-family:Arial;
+text-align:center;
+margin-top:50px;
+
+}
+
+.box{
+
+width:250px;
+padding:20px;
+background:#0d6efd;
+color:white;
+margin:auto;
+
+}
+
+button{
+
+margin-top:20px;
+padding:10px 20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+Welcome to jQuery Module
+
+</div>
+
+<button>
+
+Toggle Box
+
+</button>
+
+<script>
+
+$(document).ready(function(){
+
+$("button").click(function(){
+
+$(".box").slideToggle();
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
