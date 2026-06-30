@@ -1,1 +1,28 @@
+from abc import ABC, abstractmethod
 
+class Notification(ABC):
+
+    @abstractmethod
+    def send(self, message):
+        pass
+
+class EmailNotification(Notification):
+
+    def send(self, message):
+        print("Email:", message)
+
+class StudentRegistration:
+
+    def __init__(self, notification):
+        self.notification = notification
+
+    def register(self):
+        self.notification.send(
+            "Rahithya Kunisetty (231FA07090) registered successfully."
+        )
+
+registration = StudentRegistration(
+    EmailNotification()
+)
+
+registration.register()
