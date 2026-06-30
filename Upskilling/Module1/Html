@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Club</title>
+</head>
 
+<body>
+
+<header>
+    <h1>Community Club Portal</h1>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Events</a> |
+        <a href="#">Gallery</a> |
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<hr>
+
+<section>
+
+    <h2>Upcoming Event</h2>
+
+    <p>
+        Welcome to the Community Club Portal.
+        Register today and participate in exciting events happening this month.
+    </p>
+
+     <img src="https://wp-eventmanager.com/wp-content/uploads/blog-images/2020/community-event-ideas-to-bring-together/community-events.jpg" width="150" height="auto">
+        </section>
+
+<hr>
+
+<section>
+
+    <h2>Available Events</h2>
+
+    <ul>
+        <li>Music Night</li>
+        <li>Coding Workshop</li>
+        <li>Food Carnival</li>
+        <li>Sports Day</li>
+    </ul>
+
+</section>
+
+<hr>
+
+<section>
+
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <label>Name</label><br>
+        <input type="text" placeholder="Enter your name">
+
+        <br><br>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter your email">
+
+        <br><br>
+
+        <label>Select Event</label><br>
+
+        <select>
+            <option>Music Night</option>
+            <option>Coding Workshop</option>
+            <option>Food Carnival</option>
+            <option>Sports Day</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+</section>
+
+<hr>
+
+<footer>
+
+    <p>&copy; 2026 Community Club. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
