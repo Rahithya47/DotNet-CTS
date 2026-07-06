@@ -1,0 +1,29 @@
+class Registration:
+
+    def register(self):
+        print("Student Registered")
+
+
+class Fee:
+
+    def pay(self):
+        print("Fee Payment Successful")
+
+
+class IDCard:
+
+    def generate(self):
+        print("Student ID Card Generated")
+
+
+class CollegePortal:
+
+    def complete_process(self):
+        Registration().register()
+        Fee().pay()
+        IDCard().generate()
+
+
+portal = CollegePortal()
+
+portal.complete_process()
