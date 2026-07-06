@@ -1,0 +1,24 @@
+class Student:
+
+    def update(self):
+        print("Rahithya Kunisetty received Placement Notification.")
+
+class PlacementCell:
+
+    def __init__(self):
+        self.students = []
+
+    def subscribe(self, student):
+        self.students.append(student)
+
+    def notify(self):
+        for student in self.students:
+            student.update()
+
+placement = PlacementCell()
+
+student = Student()
+
+placement.subscribe(student)
+
+placement.notify()
