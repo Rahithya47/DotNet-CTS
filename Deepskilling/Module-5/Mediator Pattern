@@ -1,0 +1,23 @@
+class ChatMediator:
+
+    def send(self, message):
+        print("Message:", message)
+
+class Student:
+
+    def __init__(self, mediator, name):
+        self.mediator = mediator
+        self.name = name
+
+    def send_message(self, message):
+        print(self.name)
+        self.mediator.send(message)
+
+mediator = ChatMediator()
+
+student = Student(
+    mediator,
+    "Rahithya Kunisetty"
+)
+
+student.send_message("Hello Everyone!")
