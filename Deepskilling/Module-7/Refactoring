@@ -1,0 +1,20 @@
+class Student:
+
+    def get_details(self):
+        return {
+            "Name": "Rahithya Kunisetty",
+            "Roll No": "231FA07090",
+            "Department": "Information Technology"
+        }
+
+    def display(self):
+
+        details = self.get_details()
+
+        for key, value in details.items():
+            print(key + ":", value)
+
+
+student = Student()
+
+student.display()
