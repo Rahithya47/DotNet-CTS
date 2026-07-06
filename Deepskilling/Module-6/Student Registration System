@@ -1,0 +1,30 @@
+class Database:
+
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+class Student:
+
+    def __init__(self, name, roll, department):
+        self.name = name
+        self.roll = roll
+        self.department = department
+
+    def display(self):
+        print("Name:", self.name)
+        print("Roll No:", self.roll)
+        print("Department:", self.department)
+
+db = Database()
+
+student = Student(
+    "Rahithya Kunisetty",
+    "231FA07090",
+    "Information Technology"
+)
+
+student.display()
