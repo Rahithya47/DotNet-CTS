@@ -1,0 +1,19 @@
+class Registration:
+
+    def register(self):
+        self.enter_details()
+        self.verify()
+        self.complete()
+
+    def enter_details(self):
+        print("Name: Rahithya Kunisetty")
+
+    def verify(self):
+        print("Verification Completed")
+
+    def complete(self):
+        print("Registration Successful")
+
+student = Registration()
+
+student.register()
