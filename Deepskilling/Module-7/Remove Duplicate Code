@@ -1,0 +1,18 @@
+def display_student(name, roll_no, department):
+
+    print("Name:", name)
+    print("Roll No:", roll_no)
+    print("Department:", department)
+
+
+display_student(
+    "Rahithya Kunisetty",
+    "231FA07090",
+    "Information Technology"
+)
+
+display_student(
+    "Akhil",
+    "231FA07091",
+    "Information Technology"
+)
