@@ -1,0 +1,23 @@
+class Student:
+
+    def update(self, message):
+        print("Rahithya Kunisetty received:", message)
+
+class Assignment:
+
+    def __init__(self):
+        self.students = []
+
+    def subscribe(self, student):
+        self.students.append(student)
+
+    def notify(self):
+        for student in self.students:
+            student.update("New Assignment Uploaded")
+
+student = Student()
+
+assignment = Assignment()
+
+assignment.subscribe(student)
+assignment.notify()
