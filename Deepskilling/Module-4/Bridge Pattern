@@ -1,0 +1,24 @@
+class Email:
+
+    def send(self):
+        print("Email sent")
+
+class SMS:
+
+    def send(self):
+        print("SMS sent")
+
+class Student:
+
+    def __init__(self, notification):
+        self.notification = notification
+
+    def notify(self):
+        print("Student: Rahithya Kunisetty")
+        self.notification.send()
+
+student = Student(Email())
+student.notify()
+
+student = Student(SMS())
+student.notify()
