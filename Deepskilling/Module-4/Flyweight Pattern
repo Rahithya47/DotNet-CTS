@@ -1,0 +1,21 @@
+class Department:
+
+    def __init__(self, name):
+        self.name = name
+
+class Student:
+
+    def __init__(self, name, department):
+        self.name = name
+        self.department = department
+
+    def display(self):
+        print(self.name, "-", self.department.name)
+
+it = Department("Information Technology")
+
+student1 = Student("Rahithya Kunisetty", it)
+student2 = Student("Ravi", it)
+
+student1.display()
+student2.display()
