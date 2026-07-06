@@ -1,0 +1,22 @@
+class StudentRecord:
+
+    def show(self):
+        print("Name: Rahithya Kunisetty")
+        print("Roll No: 231FA07090")
+        print("Department: Information Technology")
+
+class StudentProxy:
+
+    def __init__(self):
+        self.record = StudentRecord()
+
+    def access(self, password):
+
+        if password == "admin123":
+            self.record.show()
+        else:
+            print("Access Denied")
+
+proxy = StudentProxy()
+
+proxy.access("admin123")
