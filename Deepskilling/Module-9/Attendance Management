@@ -1,0 +1,20 @@
+class Attendance:
+
+    def __init__(self):
+        self.present = []
+
+    def mark(self, student):
+        self.present.append(student)
+
+    def display(self):
+        print("Present Students")
+        for student in self.present:
+            print(student)
+
+
+attendance = Attendance()
+
+attendance.mark("Rahithya Kunisetty")
+attendance.mark("Akhil")
+
+attendance.display()
