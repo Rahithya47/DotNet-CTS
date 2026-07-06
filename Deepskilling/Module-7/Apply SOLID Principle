@@ -1,0 +1,23 @@
+class Student:
+
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
+
+
+class Report:
+
+    def generate(self, student):
+        print("Student Report")
+        print("Name:", student.name)
+        print("Roll No:", student.roll_no)
+
+
+student = Student(
+    "Rahithya Kunisetty",
+    "231FA07090"
+)
+
+report = Report()
+
+report.generate(student)
