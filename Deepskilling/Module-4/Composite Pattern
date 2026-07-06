@@ -1,0 +1,27 @@
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print(self.name)
+
+class Department:
+
+    def __init__(self):
+        self.students = []
+
+    def add_student(self, student):
+        self.students.append(student)
+
+    def display(self):
+        print("Information Technology Department")
+        for student in self.students:
+            student.display()
+
+department = Department()
+
+department.add_student(Student("Rahithya Kunisetty"))
+department.add_student(Student("Akhil"))
+
+department.display()
