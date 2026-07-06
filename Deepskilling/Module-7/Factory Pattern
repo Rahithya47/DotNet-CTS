@@ -1,0 +1,17 @@
+class ITStudent:
+
+    def details(self):
+        print("Rahithya Kunisetty")
+
+
+class StudentFactory:
+
+    def create(self):
+        return ITStudent()
+
+
+factory = StudentFactory()
+
+student = factory.create()
+
+student.details()
