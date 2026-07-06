@@ -1,0 +1,8 @@
+students = [
+    "Rahithya Kunisetty",
+    "Ravi",
+    "Akhil"
+]
+
+for student in students:
+    print(student)
