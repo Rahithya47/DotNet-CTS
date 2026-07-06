@@ -1,0 +1,20 @@
+class Order:
+
+    def __init__(self):
+        self.state = "Placed"
+
+    def change_state(self, state):
+        self.state = state
+
+    def show(self):
+        print("Order Status:", self.state)
+
+order = Order()
+
+order.show()
+
+order.change_state("Shipped")
+order.show()
+
+order.change_state("Delivered")
+order.show()
