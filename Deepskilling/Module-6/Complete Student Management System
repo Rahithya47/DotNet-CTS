@@ -1,0 +1,62 @@
+from abc import ABC, abstractmethod
+
+# Singleton
+class Database:
+
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+
+# Strategy
+class Notification(ABC):
+
+    @abstractmethod
+    def send(self):
+        pass
+
+
+class Email(Notification):
+
+    def send(self):
+        print("Registration Successful")
+
+
+# SRP
+class Student:
+
+    def __init__(self, name, roll, dept):
+        self.name = name
+        self.roll = roll
+        self.dept = dept
+
+    def display(self):
+        print("Name:", self.name)
+        print("Roll:", self.roll)
+        print("Department:", self.dept)
+
+
+# Service
+class StudentService:
+
+    def __init__(self, notification):
+        self.notification = notification
+
+    def register(self, student):
+        Database()
+        student.display()
+        self.notification.send()
+
+
+student = Student(
+    "Rahithya Kunisetty",
+    "231FA07090",
+    "Information Technology"
+)
+
+service = StudentService(Email())
+
+service.register(student)
