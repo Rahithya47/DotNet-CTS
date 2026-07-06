@@ -1,0 +1,17 @@
+class OldPrinter:
+
+    def old_print(self):
+        print("Printing using Old Printer")
+
+class PrinterAdapter:
+
+    def __init__(self, old_printer):
+        self.old_printer = old_printer
+
+    def print_document(self):
+        self.old_printer.old_print()
+
+printer = OldPrinter()
+adapter = PrinterAdapter(printer)
+
+adapter.print_document()
