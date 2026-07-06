@@ -1,0 +1,18 @@
+class Fan:
+
+    def on(self):
+        print("Fan is ON")
+
+class FanCommand:
+
+    def __init__(self, fan):
+        self.fan = fan
+
+    def execute(self):
+        self.fan.on()
+
+fan = Fan()
+
+command = FanCommand(fan)
+
+command.execute()
