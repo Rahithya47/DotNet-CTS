@@ -1,0 +1,23 @@
+class UPI:
+
+    def pay(self):
+        print("Paid using UPI")
+
+class CreditCard:
+
+    def pay(self):
+        print("Paid using Credit Card")
+
+class Payment:
+
+    def __init__(self, method):
+        self.method = method
+
+    def make_payment(self):
+        self.method.pay()
+
+payment = Payment(UPI())
+payment.make_payment()
+
+payment = Payment(CreditCard())
+payment.make_payment()
