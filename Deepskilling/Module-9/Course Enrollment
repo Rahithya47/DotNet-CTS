@@ -1,0 +1,21 @@
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+        self.courses = []
+
+    def enroll(self, course):
+        self.courses.append(course)
+
+    def display(self):
+        print("Student:", self.name)
+        print("Courses:", self.courses)
+
+
+student = Student("Rahithya Kunisetty")
+
+student.enroll("Python")
+student.enroll("Java")
+student.enroll(".NET")
+
+student.display()
