@@ -1,0 +1,29 @@
+class Student:
+
+    def __init__(self):
+        self.name = ""
+        self.roll = ""
+        self.department = ""
+
+    def display(self):
+        print(self.name)
+        print(self.roll)
+        print(self.department)
+
+class Builder:
+
+    def build(self):
+
+        student = Student()
+
+        student.name = "Rahithya Kunisetty"
+        student.roll = "231FA07090"
+        student.department = "Information Technology"
+
+        return student
+
+builder = Builder()
+
+student = builder.build()
+
+student.display()
