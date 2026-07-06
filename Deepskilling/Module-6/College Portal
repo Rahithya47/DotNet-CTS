@@ -1,0 +1,25 @@
+class Admission:
+
+    def apply(self):
+        print("Admission Completed")
+
+class Fee:
+
+    def pay(self):
+        print("Fee Paid")
+
+class IDCard:
+
+    def generate(self):
+        print("ID Card Generated")
+
+class CollegePortal:
+
+    def register(self):
+        Admission().apply()
+        Fee().pay()
+        IDCard().generate()
+
+portal = CollegePortal()
+
+portal.register()
