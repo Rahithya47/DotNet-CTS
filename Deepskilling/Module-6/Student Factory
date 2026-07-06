@@ -1,0 +1,25 @@
+class ITStudent:
+
+    def details(self):
+        print("Rahithya Kunisetty")
+        print("Department: Information Technology")
+
+class CSEStudent:
+
+    def details(self):
+        print("Department: Computer Science")
+
+class StudentFactory:
+
+    def create_student(self, dept):
+
+        if dept == "IT":
+            return ITStudent()
+        else:
+            return CSEStudent()
+
+factory = StudentFactory()
+
+student = factory.create_student("IT")
+
+student.details()
