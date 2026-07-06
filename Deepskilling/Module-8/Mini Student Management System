@@ -1,0 +1,54 @@
+class Database:
+
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
+
+class Student:
+
+    def __init__(self, name, roll_no, department):
+        self.name = name
+        self.roll_no = roll_no
+        self.department = department
+
+
+class StudentFactory:
+
+    def create_student(self):
+        return Student(
+            "Rahithya Kunisetty",
+            "231FA07090",
+            "Information Technology"
+        )
+
+
+class Notification:
+
+    def send(self):
+        print("Registration Successful")
+
+
+class StudentService:
+
+    def __init__(self):
+        self.db = Database()
+
+    def register(self, student):
+        print("Name:", student.name)
+        print("Roll No:", student.roll_no)
+        print("Department:", student.department)
+
+        Notification().send()
+
+
+factory = StudentFactory()
+
+student = factory.create_student()
+
+service = StudentService()
+
+service.register(student)
