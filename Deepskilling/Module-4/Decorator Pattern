@@ -1,0 +1,19 @@
+class StudentID:
+
+    def show(self):
+        print("Student ID Card")
+
+class LibraryCard:
+
+    def __init__(self, student):
+        self.student = student
+
+    def show(self):
+        self.student.show()
+        print("Library Access Added")
+
+student = StudentID()
+
+library = LibraryCard(student)
+
+library.show()
