@@ -1,0 +1,15 @@
+devops_lifecycle = [
+    "Plan",
+    "Develop",
+    "Build",
+    "Test",
+    "Release",
+    "Deploy",
+    "Operate",
+    "Monitor"
+]
+
+print("DevOps Lifecycle")
+
+for stage in devops_lifecycle:
+    print(stage)
