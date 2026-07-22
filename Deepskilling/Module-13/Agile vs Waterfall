@@ -1,0 +1,14 @@
+print("Agile vs Waterfall\n")
+
+comparison = {
+    "Development": ("Iterative", "Sequential"),
+    "Customer Feedback": ("Continuous", "End of Project"),
+    "Requirement Changes": ("Easy", "Difficult"),
+    "Delivery": ("Frequent", "One Time")
+}
+
+for key, value in comparison.items():
+    print(f"{key}:")
+    print("  Agile     :", value[0])
+    print("  Waterfall :", value[1])
+    print()
