@@ -1,0 +1,25 @@
+class Sprint:
+
+    def planning(self):
+        print("Sprint Planning Completed")
+
+    def development(self):
+        print("Development in Progress")
+
+    def testing(self):
+        print("Testing Completed")
+
+    def review(self):
+        print("Sprint Review Completed")
+
+    def retrospective(self):
+        print("Sprint Retrospective Completed")
+
+
+sprint = Sprint()
+
+sprint.planning()
+sprint.development()
+sprint.testing()
+sprint.review()
+sprint.retrospective()
