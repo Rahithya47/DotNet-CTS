@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+docker compose up
+
+docker compose down
+
+
+
+docker volume create myvolume
+
+docker volume ls
+
+docker network create mynetwork
+
+docker network ls
+
+docker run -d \
+--name nginx-container \
+--network mynetwork \
+-v myvolume:/usr/share/nginx/html \
+-p 8080:80 \
+nginx
