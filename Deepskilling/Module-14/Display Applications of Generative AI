@@ -1,0 +1,12 @@
+applications = [
+    "Text Generation",
+    "Code Completion",
+    "Chatbots",
+    "Image Generation",
+    "Content Writing"
+]
+
+print("Applications of Generative AI\n")
+
+for app in applications:
+    print(app)
