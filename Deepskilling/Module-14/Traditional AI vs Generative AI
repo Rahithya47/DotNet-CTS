@@ -1,0 +1,9 @@
+print("Traditional AI vs Generative AI\n")
+
+comparison = {
+    "Traditional AI": "Analyzes and predicts data",
+    "Generative AI": "Creates new content like text, code, and images"
+}
+
+for key, value in comparison.items():
+    print(key, ":", value)
