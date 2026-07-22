@@ -1,0 +1,12 @@
+steps = [
+    "Developer Writes Code",
+    "Push to Git",
+    "Automatic Build",
+    "Run Tests",
+    "Generate Report"
+]
+
+print("Continuous Integration Process\n")
+
+for step in steps:
+    print(step)
