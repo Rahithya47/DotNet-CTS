@@ -1,0 +1,11 @@
+print("User Story\n")
+
+print("As a Student")
+print("I want to register for a course")
+print("So that I can improve my programming skills")
+
+print("\nAcceptance Criteria\n")
+
+print("Given the registration page is open")
+print("When valid details are entered")
+print("Then the registration should be successful")
