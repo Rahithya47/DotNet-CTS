@@ -1,0 +1,12 @@
+tools = {
+    "Version Control": "Git",
+    "CI/CD": "GitHub Actions",
+    "Container": "Docker",
+    "Orchestration": "Kubernetes",
+    "Monitoring": "Prometheus"
+}
+
+print("Popular DevOps Tools\n")
+
+for category, tool in tools.items():
+    print(category, ":", tool)
