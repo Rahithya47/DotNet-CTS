@@ -1,0 +1,7 @@
+echo "# Student Management System" > README.md
+
+git status
+
+git add README.md
+
+git commit -m "Initial Commit"
