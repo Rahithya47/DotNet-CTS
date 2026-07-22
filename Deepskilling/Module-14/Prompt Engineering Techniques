@@ -1,0 +1,10 @@
+techniques = {
+    "Zero-shot": "Prompt without examples",
+    "Few-shot": "Prompt with examples",
+    "Chain-of-Thought": "Prompt with step-by-step reasoning"
+}
+
+print("Prompt Engineering Techniques\n")
+
+for key, value in techniques.items():
+    print(key, ":", value)
