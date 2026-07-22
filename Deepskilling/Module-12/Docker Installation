@@ -1,0 +1,7 @@
+docker --version
+
+docker pull ubuntu
+
+docker images
+
+docker run -it ubuntu bash
