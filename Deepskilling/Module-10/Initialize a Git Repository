@@ -1,0 +1,13 @@
+mkdir StudentManagementSystem
+
+cd StudentManagementSystem
+
+git init
+
+//Configure Git
+
+git config --global user.name "Rahithya Kunisetty"
+
+git config --global user.email "rahithya@example.com"
+
+git config --list
