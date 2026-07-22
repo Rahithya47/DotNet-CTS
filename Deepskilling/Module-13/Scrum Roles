@@ -1,0 +1,24 @@
+roles = {
+    "Product Owner": "Manages Product Backlog",
+    "Scrum Master": "Facilitates Scrum Process",
+    "Development Team": "Develops the Product"
+}
+
+print("Scrum Roles\n")
+
+for role, work in roles.items():
+    print(role, "->", work)
+
+
+
+ceremonies = [
+    "Sprint Planning",
+    "Daily Scrum",
+    "Sprint Review",
+    "Sprint Retrospective"
+]
+
+print("Scrum Ceremonies\n")
+
+for ceremony in ceremonies:
+    print(ceremony)
