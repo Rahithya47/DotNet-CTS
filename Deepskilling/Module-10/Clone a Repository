@@ -1,0 +1,8 @@
+git clone https://github.com/username/project.git
+
+
+git branch feature-login
+
+git checkout feature-login
+
+git branch
