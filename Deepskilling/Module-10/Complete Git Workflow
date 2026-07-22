@@ -1,0 +1,29 @@
+mkdir GitPractice
+
+cd GitPractice
+
+git init
+
+echo "Hello Git" > file.txt
+
+git add .
+
+git commit -m "First Commit"
+
+git branch feature1
+
+git checkout feature1
+
+echo "Feature Added" >> file.txt
+
+git add .
+
+git commit -m "Added Feature"
+
+git checkout main
+
+git merge feature1
+
+git remote add origin https://github.com/username/GitPractice.git
+
+git push -u origin main
