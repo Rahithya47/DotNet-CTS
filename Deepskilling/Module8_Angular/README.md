@@ -79,3 +79,4 @@ Develop Reactive Forms and consume REST APIs using HttpClient.
 ## Outcome
 
 By completing this module, learners will gain practical knowledge of Angular application development and understand how modern enterprise web applications are designed using Angular.
+
